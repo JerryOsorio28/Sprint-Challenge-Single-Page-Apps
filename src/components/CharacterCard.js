@@ -12,8 +12,12 @@ export default function CharacterCard (props) {
                 <span className='date'>{props.character.species}: {props.character.status}</span>
             </Card.Meta>
             <Card.Description>
+              <div>
                 Location: {props.character.location.name}
+              </div>
+              <div>
                 Origin: {props.character.origin.name}
+              </div>
             </Card.Description>
             </Card.Content>
             <Card.Content extra>
@@ -23,20 +27,3 @@ export default function CharacterCard (props) {
     </Card>
   )
 }
-
-{/* <div className = 'character-card'>     
-          <img src ={props.character.image} />  
-          <h1>Name: {props.character.name}</h1>
-            <p>
-                {props.character.species}{props.character.status}
-            </p>
-            <p>
-                Location: {props.character.location.name}
-            </p>
-            <p>
-                Origin: {props.character.origin.name}
-            </p>
-            <p>
-                Episodes: {props.character.episode.length}
-            </p>
-        </div>  */}

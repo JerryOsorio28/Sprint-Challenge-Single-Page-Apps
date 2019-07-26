@@ -10,10 +10,10 @@ export default function EpisodesList() {
   useEffect(() => {
     // TODO: Add AJAX/API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-    Axios.get('https://rickandmortyapi.com/api/episodes/')
+    Axios.get('https://rickandmortyapi.com/api/episode/')
       .then(object =>{
         episodesList = object.data.results
-        console.log(object.data.results)
+        // console.log(episodesList)
         setEpisodesList(episodesList);
       })
       .catch(object =>{

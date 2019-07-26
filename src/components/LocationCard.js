@@ -19,13 +19,3 @@ export default function LocationCard (props) {
     </Card> 
   )
 }
-
-{/* <div className = 'location-card'>     
-          <h1>{props.location.name}</h1>
-            <p>
-              {props.location.type}{props.location.dimension}
-            </p>
-            <p>
-              {props.location.residents.length} Residents
-            </p>
-        </div> */}
