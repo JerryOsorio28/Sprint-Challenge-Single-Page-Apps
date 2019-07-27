@@ -7,18 +7,23 @@ export default function EpisodesCard (props) {
         <div className = 'episodes-card'>     
           <Card>
             <Card.Content>
-            <Card.Header>Episode: {props.episode.name}</Card.Header>
+              <Card.Content extra>
+                <Card.Header style ={{paddingBottom: '10px', textDecoration: 'underline'}}>
+                  <h4>
+                    Episode: {props.episode.name}
+                  </h4>
+                </Card.Header>
+              </Card.Content>
             <Card.Meta>
                 <span className='date'>{props.episode.episode}</span>
             </Card.Meta>
             <Card.Description>
-              <div>
-                {props.episode.created}
+              <div style={{fontWeight: 400}}>
+                Date created: {props.episode.created}
               </div>
               <div>
-                {props.episode.air_date}
+                Air Date: {props.episode.air_date}
               </div>
-                
             </Card.Description>
             </Card.Content>
             <Card.Content extra>

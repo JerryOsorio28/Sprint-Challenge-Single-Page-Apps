@@ -9,11 +9,7 @@ export default function App() {
     <main>
     <Header />
     <TabNav />
-    <AppRouter>
-      {/* <Route path ='/characters' render={props => <CharacterList {...props}/>}charactersList={CharacterList}/>
-      <Route path ='/locations' render={props => <LocationList {...props}/>}locationsList={LocationList}/>
-      <Route path ='/episodes' render={props => <EpisodesList {...props}/>}episodesList={EpisodesList}/> */}
-    </AppRouter>
+    <AppRouter />
   </main>
   )
 }
